@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="src/style/style.css">
     <title>Character Manager</title>
 </head>
@@ -12,23 +17,66 @@
 <body>
 
     <header>
-        <h1></h1>
-        <button></button>
+        <h1>Your favorites heroes</h1>
+        <h3>View, edit and create all your favorites characters !</h3>
+        <button>
+            <a href="form.html" target="_blank">Create it !</a>
+        </button>
     </header>
 
     <main>
 
-        <template>
-            <article>
+        <section>
 
-                <img src="" alt=""></img>
-                <h2></h2>
-                <p></p>
-                <button></button>
-                <button></button>
+            <template>
+                <article class="" id="">
 
-            </article>
-        </template>
+                    <a></a>
+                    <img src="" alt=""></img>
+                    <h2></h2>
+                    <p></p>
+                    <button>
+                        <a href="#">Edit</a>
+                    </button>
+                    <button>Delete</button>
+
+                </article>
+            </template>
+
+        </section>
+
+        <section class="hidden">
+            <form method="post" action="#" class="form-container">
+
+                <div class="form">
+                    <label for="name" class="label">Name :</label>
+                    <input type="text" class="input" placeholder="Choose a name for your hero...">
+                </div>
+
+                <div class="form">
+                    <label for="shortdescription" class="label">Short description :</label>
+                    <input type="text" class="input" placeholder="Describe your hero in one line...">
+                </div>
+
+                <div class="form-file">
+                    <label for="image" class="label">Select an image :</label>
+                    <input type="file" class="input">
+                </div>
+
+                <div class="form">
+                    <label for="description" class="label">Description :</label>
+                    <textarea type="text" class="input"
+                        placeholder="Write a full description of your hero..."></textarea>
+                </div>
+
+                <div class="form">
+                    <input type="submit" value="SUBMIT" class="submit">
+                </div>
+
+            </form>
+        </section>
+
+        <section></section>
 
     </main>
 

@@ -1,0 +1,53 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* Formulaire */
+
+.form-container {
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.form {
+    margin-bottom: 25px;
+}
+
+.form-file {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    width: 600px;
+    display: flex;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+
+/* ********************************************************* */

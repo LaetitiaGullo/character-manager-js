@@ -11,11 +11,11 @@ async function getCharacters() {
         const template = document.querySelector("#template");
         const target = document.querySelector("#target");
 
-        heroes.forEach(({ description, image, name, id }) => {
+        heroes.forEach(({ shortDescription, image, name, id }) => {
             const hero = template.cloneNode(true).content;
 
             hero.querySelector(".heroName").innerText = name;
-            hero.querySelector(".heroDescription").innerText = description;
+            hero.querySelector(".heroDescription").innerText = shortDescription;
             hero.querySelector(".heroImg").setAttribute("src", `data:image/jpg;base64,${image}`);
             hero.querySelector(".delete").setAttribute("id", id);
             hero.querySelector(".delete").setAttribute("id", id);

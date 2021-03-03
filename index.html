@@ -18,12 +18,14 @@
 
     <header>
 
-        <h1>Your favorites heroes</h1>
-        <h3>View, edit and create all your favorites characters !</h3>
-        <div class="create">
-            <button id="create">
-                <a href="form.html">Create your own hero</a>
-            </button>
+        <div class="title">
+            <h1>Your favorites heroes</h1>
+            <h3>View, edit and create all your favorites characters !</h3>
+            <div class="create">
+                <button id="create">
+                    <a href="#">Create your own hero</a>
+                </button>
+            </div>
         </div>
 
     </header>
@@ -38,12 +40,12 @@
             <article class="card">
 
                 <div class="display">
-                    <a href="#" id="" onClick="displayHero(this.id)">
-                        <img src="src/images/more.png" alt="">
+                    <a href="#" id="" title="View full card" onClick="displayHero(this.id)">
+                        <img src="src/images/more.png" alt="More" class="more">
                     </a>
                 </div>
 
-                <img class="heroImg" src="src/images/hqdefault.jpg" alt="">
+                <img class="heroImg" src="src/images/hqdefault.jpg" alt="Image">
 
                 <div class="card-text">
                     <h2 class="heroName">abc</h2>
@@ -63,10 +65,8 @@
 
         <section class="hidden" id="form">
 
-            <div class="close">
-                <a href="#">
-                    <img src="src/images/cancel.png" alt="">
-                </a>
+            <div class="close form">
+                <img src="src/images/cancel.png" alt="Close" title="Close" class="cross">
             </div>
 
             <form method="post" action="#" class="form-container">
@@ -83,7 +83,7 @@
 
                 <div class="form" id="form-file">
                     <label for="image" class="label">Select an image :</label>
-                    <input type="file" class="input" value="">
+                    <input type="file" class="input" id="browse" value="">
                     <span class="editImg"></span>
                 </div>
 
@@ -93,7 +93,7 @@
                         placeholder="Write a full description of your hero..."></textarea>
                 </div>
 
-                <div class="form">
+                <div class="form" id="submit">
                     <input type="submit" value="SUBMIT" class="submit">
                 </div>
 
@@ -102,20 +102,26 @@
 
         <!-- Open card -->
 
-        <section class="hidden" id="card-open">
+        <section class="hidden">
 
-            <div class="close">
-                <a href="#">
-                    <img src="src/images/cancel.png" alt="">
-                </a>
-            </div>
-            <img class="displayImg" src="" alt="">
-            <h3>Name of the hero :</h3>
-            <p class="displayName"></p>
-            <h3>Short description :</h3>
-            <p class="displayShort"></p>
-            <h3>Description :</h3>
-            <p class="displayDescription"></p>
+            <article class="" id="open">
+
+                <div class="close display">
+                    <img src="src/images/cancel.png" alt="Close" class="cross">
+                </div>
+
+                <img class="displayImg" src="src/images/hqdefault.jpg" alt="Image">
+
+                <div class="card-text">
+                    <h3>Name of the hero :</h3>
+                    <p class="displayName"></p>
+                    <h3>Short description :</h3>
+                    <p class="displayShort"></p>
+                    <h3>Description :</h3>
+                    <p class="displayDescription"></p>
+                </div>
+
+            </article>
 
         </section>
 

@@ -1,33 +1,66 @@
+/* General */
+
 * {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
+p {
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+section {
+    padding: 10px;
+    margin: 10px auto 20px auto;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    width: auto;
+    font-weight: 500;
+    display: flex;
+}
+
+.hidden {
+display: none;
+}
+
+
+
+/* Header */
+
 header {
-    padding: 20px 20px 40px 20px;
-    margin-bottom: 20px;
+    padding: 75px;
     text-align: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     background: url("../images/heroes.jpg") no-repeat center top;
     background-size: 100% 100%;
 }
 
+.title {
+    width: 30%;
+}
+
 h1 {
-    margin-bottom: 0;
+    margin-bottom: 10px;
     color: #c04a2c;
 }
 
 h3 {
-    margin-top: 0;
+    margin-bottom: 10px;
     color: #c04a2c;
-}
-
-h2 {
-    margin-bottom: 0;
-}
-
-p {
 }
 
 .create {
@@ -40,33 +73,6 @@ p {
     background-color: #c5502d;
 }
 
-a {
-    text-decoration: none;
-}
-
-a:visited {
-    color: white;
-}
-
-section {
-    padding: 10px;
-    margin: 10px auto 20px auto;
-    border: 1px solid black;
-}
-
-button {
-    padding: 10px;
-    border: none;
-    width: auto;
-    font-weight: 500;
-    display: flex;
-}
-
-/* .hidden {
-display: none;
-} */
-
-/* ********************************************************* */
 
 
 /* Card */
@@ -74,16 +80,22 @@ display: none;
 #target {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
     display: flex;
     flex-direction: column;
-    align-content: space-between;
+    justify-content: space-between;
+    margin: 10px;
     padding: 10px;
     width: 250px;
     height: auto;
     border: rgb(189, 189, 189) dotted 1px;
+}
+
+h2 {
+    margin-bottom: 10px;
 }
 
 .close,
@@ -92,15 +104,21 @@ display: none;
     justify-content: right;
 }
 
+.more,
+.cross {
+    cursor: pointer;
+}
+
 .button {
     display: flex;
     justify-content: center;
 }
 
-.heroImg {
+.heroImg,
+.displayImg {
     height: 100px;
     width: 100px;
-    margin: 0 auto;
+    margin: 0 auto 10px auto;
 }
 
 .card-text {
@@ -111,16 +129,17 @@ display: none;
     margin-right: 5px;
     color: white;
     background-color: #78a85c;
+    cursor: pointer;
 }
 
 .delete {
     margin-left: 5px;
     color: white;
     background-color: #dd4142;
+    cursor: pointer;
 }
 
 
-/* ********************************************************* */
 
 /* Formulaire */
 
@@ -134,13 +153,14 @@ display: none;
 #form {
     background-color: white;
     width: 75%;
-    /* position: absolute;
+    border: rgb(189, 189, 189) dotted 1px;
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
-    top: 15%;
+    top: 30%;
     left: 0;
     right: 0;
-    z-index: 1; */
+    z-index: 1;
 }
 
 .form {
@@ -160,17 +180,39 @@ display: none;
     padding-bottom: 10px;
 }
 
+#browse {
+    cursor: pointer;
+}
+
 .submit {
+    cursor: pointer;
+}
+
+#submit {
     display: flex;
     justify-content: center;
 }
 
 
-/* ********************************************************* */
 
 /* Open card */
 
-#card-open {
-    width: 75%;
+#open {
+    background-color: white;
+    width: 40%;
     height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    border: rgb(189, 189, 189) dotted 1px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
+

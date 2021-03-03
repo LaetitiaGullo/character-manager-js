@@ -17,50 +17,74 @@
 <body>
 
     <header>
+
         <h1>Your favorites heroes</h1>
         <h3>View, edit and create all your favorites characters !</h3>
-        <button>
-            <a href="form.html" target="_blank">Create it !</a>
-        </button>
+        <div class="create">
+            <button id="create">
+                <a href="form.html">Create your own hero</a>
+            </button>
+        </div>
+
     </header>
 
     <main>
 
-        <section>
+        <!-- Card -->
 
-            <template>
-                <article class="" id="">
+        <section id="target"></section>
 
-                    <a></a>
-                    <img src="" alt=""></img>
-                    <h2></h2>
-                    <p></p>
-                    <button>
-                        <a href="#">Edit</a>
-                    </button>
-                    <button>Delete</button>
+        <template id="template">
+            <article class="card">
 
-                </article>
-            </template>
+                <div class="display">
+                    <a href="#" id="" onClick="displayHero(this.id)">
+                        <img src="src/images/more.png" alt="">
+                    </a>
+                </div>
 
-        </section>
+                <img class="heroImg" src="src/images/hqdefault.jpg" alt="">
 
-        <section class="hidden">
+                <div class="card-text">
+                    <h2 class="heroName">abc</h2>
+                    <p class="heroDescription">blabla</p>
+                </div>
+
+                <div class="button">
+                    <button class="edit" id="" onClick="editHero(this.id)">Edit</button>
+                    <button class="delete" id="" onClick="deleteHero(this.id)">Delete</button>
+                </div>
+
+            </article>
+        </template>
+
+
+        <!-- Formulaire -->
+
+        <section class="hidden" id="form">
+
+            <div class="close">
+                <a href="#">
+                    <img src="src/images/cancel.png" alt="">
+                </a>
+            </div>
+
             <form method="post" action="#" class="form-container">
 
                 <div class="form">
                     <label for="name" class="label">Name :</label>
-                    <input type="text" class="input" placeholder="Choose a name for your hero...">
+                    <input type="text" class="input" placeholder="Choose a name for your hero..." value="">
                 </div>
 
                 <div class="form">
                     <label for="shortdescription" class="label">Short description :</label>
-                    <input type="text" class="input" placeholder="Describe your hero in one line...">
+                    <input type="text" class="input" placeholder="Describe your hero in one line..." value="">
                 </div>
 
-                <div class="form-file">
+                <div class="form" id="form-file">
                     <label for="image" class="label">Select an image :</label>
-                    <input type="file" class="input">
+                    <input type="file" class="input" value="">
+                    <span class="editImg"></span>
                 </div>
 
                 <div class="form">
@@ -76,7 +100,24 @@
             </form>
         </section>
 
-        <section></section>
+        <!-- Open card -->
+
+        <section class="hidden" id="card-open">
+
+            <div class="close">
+                <a href="#">
+                    <img src="src/images/cancel.png" alt="">
+                </a>
+            </div>
+            <img src="" alt="">
+            <h3>Name of the hero :</h3>
+            <p></p>
+            <h3>Short description :</h3>
+            <p></p>
+            <h3>Description :</h3>
+            <p></p>
+
+        </section>
 
     </main>
 

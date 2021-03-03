@@ -1,44 +1,159 @@
 * {
     font-family: 'Roboto', sans-serif;
+    margin: 0;
 }
 
 header {
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding: 20px 20px 40px 20px;
     margin-bottom: 20px;
     text-align: center;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background: url("../images/heroes.jpg") no-repeat center top;
+    background-size: 100% 100%;
+}
+
+h1 {
+    margin-bottom: 0;
+    color: #c04a2c;
+}
+
+h3 {
+    margin-top: 0;
+    color: #c04a2c;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+p {
+}
+
+.create {
+    display: flex;
+    justify-content: center;
+
+}
+
+#create {
+    background-color: #c5502d;
 }
 
 a {
     text-decoration: none;
 }
 
-.hidden {
-    visibility: hidden;
+a:visited {
+    color: white;
 }
+
+section {
+    padding: 10px;
+    margin: 10px auto 20px auto;
+    border: 1px solid black;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    width: auto;
+    font-weight: 500;
+    display: flex;
+}
+
+/* .hidden {
+display: none;
+} */
+
+/* ********************************************************* */
+
+
+/* Card */
+
+#target {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    padding: 10px;
+    width: 250px;
+    height: auto;
+    border: rgb(189, 189, 189) dotted 1px;
+}
+
+.close,
+.display {
+    display: flex;
+    justify-content: right;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+}
+
+.heroImg {
+    height: 100px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.card-text {
+    text-align: center;
+}
+
+.edit {
+    margin-right: 5px;
+    color: white;
+    background-color: #78a85c;
+}
+
+.delete {
+    margin-left: 5px;
+    color: white;
+    background-color: #dd4142;
+}
+
+
+/* ********************************************************* */
 
 /* Formulaire */
 
 .form-container {
     height: auto;
-    width: auto;
     display: flex;
     flex-direction: column;
+    padding: 0 auto;
+}
+
+#form {
+    background-color: white;
+    width: 75%;
+    /* position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 15%;
+    left: 0;
+    right: 0;
+    z-index: 1; */
 }
 
 .form {
     margin-bottom: 25px;
 }
 
-.form-file {
-    margin-bottom: 25px;
+#form-file {
     display: flex;
     flex-direction: column;
 }
 
 .input {
-    width: 600px;
+    width: 95%;
     display: flex;
     margin-top: 10px;
     padding-top: 10px;
@@ -50,4 +165,12 @@ a {
     justify-content: center;
 }
 
+
 /* ********************************************************* */
+
+/* Open card */
+
+#card-open {
+    width: 75%;
+    height: auto;
+}

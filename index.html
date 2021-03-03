@@ -17,15 +17,16 @@
     </header>
 
     <main>
+        <section id="target"></section>
 
-        <template>
+        <template id="template">
             <article>
-
-                <img src="" alt=""></img>
-                <h2></h2>
-                <p></p>
-                <button></button>
-                <button></button>
+                <a href=""><img src="" alt=""></a>
+                <img class="heroImg" src="" alt=""></img>
+                <h2 class="heroName"></h2>
+                <p class="heroDescription"></p>
+                <button class="edit" id="" onClick="editHero(this.id)">Edit</button>
+                <button class="delete" id="" onClick="deleteHero(this.id)">Delete</button>
 
             </article>
         </template>

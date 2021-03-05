@@ -67,35 +67,32 @@
                 <img src="src/images/cancel.png" alt="Close" title="Close" class="cross">
             </div>
 
-            <form method="post" action="#" class="form-container">
 
-                <div class="form">
-                    <label for="name" class="label">Name :</label>
-                    <input type="text" class="input" placeholder="Choose a name for your hero..." value="">
-                </div>
+            <div class="form">
+                <label for="name" class="label">Name :</label>
+                <input id="name" type="text" class="input" placeholder="Choose a name for your hero..." value="">
+            </div>
 
-                <div class="form">
-                    <label for="shortdescription" class="label">Short description :</label>
-                    <input type="text" class="input" placeholder="Describe your hero in one line..." value="">
-                </div>
+            <div class="form">
+                <label for="shortdescription" class="label">Short description :</label>
+                <input id="shortdescription" type="text" class="input" placeholder="Describe your hero in one line..."
+                    value="">
+            </div>
 
-                <div class="form" id="form-file">
-                    <label for="image" class="label">Select an image :</label>
-                    <input type="file" class="input" id="browse" value="">
-                    <span class="editImg"></span>
-                </div>
+            <div class="form">
+                <label for="description" class="label">Description :</label>
+                <textarea id="description" type="text" class="input"
+                    placeholder="Write a full description of your hero..."></textarea>
+            </div>
+            <div class="form" id="form-file">
+                <label for="image" class="label">Select an image :</label>
+                <input id="image" type="file" class="input" id="browse" value="">
+                <span class="editImg"></span>
+            </div>
 
-                <div class="form">
-                    <label for="description" class="label">Description :</label>
-                    <textarea type="text" class="input"
-                        placeholder="Write a full description of your hero..."></textarea>
-                </div>
 
-                <div class="form" id="submit">
-                    <input type="submit" value="SUBMIT" class="submit">
-                </div>
+            <button class="form" id="submit" type="submit" class="submit">Submit</button>
 
-            </form>
         </section>
 
         <!-- Open card -->

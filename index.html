@@ -20,7 +20,7 @@
 
         <div class="title">
             <h1>Your favorites heroes</h1>
-            <h3>View, edit and create all your favorites characters !</h3>
+            <h3>View, edit and create all your favorite characters !</h3>
             <div class="create">
                 <button id="create">
                     <a href="#">Create your own hero</a>
@@ -40,7 +40,7 @@
             <article class="card">
 
                 <div class="display" id="" onClick="displayHero(this.id)">
-                    <img src="src/images/more.png" alt="More" class="more">
+                    <img src="src/images/more.png" alt="View more" class="more" title="View more">
                 </div>
 
                 <img class="heroImg" src="src/images/hqdefault.jpg" alt="Image">
@@ -51,8 +51,12 @@
                 </div>
 
                 <div class="button">
-                    <button class="edit" id="" onClick="editHero(this.id)">Edit</button>
-                    <button class="delete" id="" onClick="deleteHero(this.id)">Delete</button>
+                    <button class="edit" id="" onClick="editHero(this.id)" title="Edit">
+                        <img src="src/images/edit.png">
+                    </button>
+                    <button class="delete" id="" onClick="deleteHero(this.id)" title="Delete">
+                        <img src="src/images/trash.png">
+                    </button>
                 </div>
 
             </article>

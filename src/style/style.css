@@ -15,7 +15,7 @@ p {
 
 a {
     text-decoration: none;
-    color: #4a6c9c;
+    color: #778beb;
 }
 
 a:visited {
@@ -98,6 +98,9 @@ h3 {
     border-radius: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, .3);
 }
+.card:hover{
+    box-shadow: 0 0 5px #63cdda;
+}
 
 h2 {
     margin-bottom: 10px;
@@ -139,7 +142,7 @@ h2 {
 .edit {
     margin-right: 5px;
     color: white;
-    background-color: #78a85c;
+    background-color:#778beb;
     cursor: pointer;
     width: 45px;
 }
@@ -152,7 +155,7 @@ h2 {
     margin-left: 5px;
     padding-left: 13px;
     color: white;
-    background-color: #dd4142;
+    background-color: #e15f41;
     cursor: pointer;
     width: 45px;
 }

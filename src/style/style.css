@@ -43,12 +43,44 @@ display: none;
 
 /* Header */
 
+.yellowWave,
+.purpleWave {
+    position: absolute;
+    transform: rotate(180deg);
+}
+
+.purpleWave {
+    top: calc(var(--mouseY) + 120px);
+    left: calc(var(--mouseX) -30px);
+}
+
+.yellowWave {
+    z-index: 1;
+    transform: scaleY(-1);
+    top: calc((var(--mouseY)) * 1.1 + 100px);
+    left: calc(var(--mouseX) * 1.1);
+}
+
 header {
-    padding: 75px;
-    display: flex;
-    flex-direction: column;
-    background: url("../images/3.jpg") no-repeat;
-    background-size: 100% 100%;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+:root {
+    --mouseX: 0px;
+    --mouseY: 0px; 
+}
+
+.headerBackground {
+    width: 100%;
+    height: 150px;
+    background-color: #f7d794;
+}
+
+.title {
+    position: absolute;
 }
 
 h1 {

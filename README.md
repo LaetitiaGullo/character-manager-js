@@ -1,7 +1,7 @@
 # Character Manager
 
 ### URL of the project :
-Upcoming
+https://laetitiagullo.github.io/character-manager-js/
 
 ### Date of realization :
 March 2021
